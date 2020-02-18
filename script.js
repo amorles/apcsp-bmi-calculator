@@ -4,6 +4,7 @@ let weight=(document.getElementById("weight"));
 let finalHeight
 let bmi
 let classification
+
 // Classification can range from 1 to 6. 1 stands for underweight, 2 for normal, 3 for overweight, 4 for obese, 5 for extremely obese, and 6 for error.
 
 function convertHeight() {
@@ -11,7 +12,7 @@ function convertHeight() {
 }
 
 function bmiCalculation(){
-    bmi = 703 * weight / ((inches)^2)
+    bmi = 703 * weight / ((finalHeight)^2)
 }
 
 function checkBMI(){
@@ -39,9 +40,13 @@ function printResults(){
     console.log("This is a test. BMI: " + bmi + "Final Height:" + finalHeight + "Class:" + classification)
 }
 
+
+
 function runAll(){
     convertHeight()
     bmiCalculation()
     checkBMI()
     printResults()
 }
+
+
