@@ -8,16 +8,20 @@ let classification
 // Classification can range from 1 to 6. 1 stands for underweight, 2 for normal, 3 for overweight, 4 for obese, 5 for extremely obese, and 6 for error.
 
 function convertHeight() {
-    finalHeight = heightft.value*12 + heightin.value
+    heightNan = Number(heightft.value*12) + Number(heightin.value)
+    finalHeight = Number(heightNan)
 }
 
 function bmiCalculation(){
-    bmi = 703 * weight / ((finalHeight)^2)
+    bmiIn = Number(weight.value) / (Number(((finalHeight))) * Number(((finalHeight))))
+  bmiNan = Number(703) * Number(bmiIn)
+    bmi = Number(bmiNan)
 }
 
 function checkBMI(){
     if(bmi<18.5){
         classification = 1
+        document.getElementById("results").innerHTML = "You are underweight! Go eat or something!";
     }
     else if(bmi<25){
         classification = 2
@@ -49,4 +53,7 @@ function runAll(){
     printResults()
 }
 
-
+function test(){
+  convertHeight()
+  bmiCalculation()
+}

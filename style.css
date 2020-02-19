@@ -7,50 +7,7 @@ html *
 
 h1{
   text-align: center;
-}
-
-/* PHONE CSS */
-.smartphone {
-    position: relative;
-    width: 350px;
-    height: 650px;
-    margin: auto;
-    border: 15px black solid;
-    border-bottom-width: 60px;
-    border-top-width: 60px;
-    border-radius: 35px;
-  }
-  .smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
-  }
-  .smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -75px;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 50%;
-  }
-  .smartphone .content {
-    width: 350px;
-    height: 650px;
-    background: #8de3f0;
-  }
-  
-  
+}  
   /* CONTENT CSS */
   input[type=number] {
     background-color: #83d2de !important;
