@@ -21,7 +21,7 @@ function bmiCalculation(){
 function checkBMI(){
     if(bmi<18.5){
         classification = 1
-        document.getElementById("results").innerHTML = "You are underweight! Go eat or something!";
+        document.getElementById("results").innerHTML = "You are underweight! Your BMI is: " + bmi + ". ;
     }
     else if(bmi<25){
         classification = 2
