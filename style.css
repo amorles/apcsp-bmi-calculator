@@ -36,3 +36,19 @@ h1{
   margin: 0 auto; 
   display: block;
 }
+
+.underweight{
+  color: blue !important
+}
+.healthy{
+  color:green  !important
+}
+.overweight{
+  color: yellow !important
+}
+.obese{
+  color: orange !important
+}
+.eobese{
+  color: red !important
+}
