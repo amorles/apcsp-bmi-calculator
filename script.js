@@ -21,6 +21,7 @@ function bmiCalculation(){
 function checkBMI(){
     convertHeight()
     bmiCalculation()
+
     if(bmi<18.5){
         classification = 1
         document.getElementById("results").innerHTML = "You are underweight according to the BMI scale! Your current BMI is: " + parseFloat(bmi).toFixed(2) +". Healthy weight begins at a BMI score of 18.5.";
@@ -47,23 +48,23 @@ function checkBMI(){
     }
 }
 function changeColor(){
-    if(classification=1){
+    if(classification==1){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
         document.getElementById("results").classList.add('underweight')
     }
-    else if(classification=2){
+    else if(classification==2){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
         document.getElementById("results").classList.add('healthy')
     }
-    else if(classification=3){
+    else if(classification==3){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
         document.getElementById("results").classList.add('overweight')
     }
-    else if(classification=4){
+    else if(classification==4){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
         document.getElementById("results").classList.add('obese')
     }
-    else if(classification=5){
+    else if(classification==5){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
         document.getElementById("results").classList.add('eobese')
     }
@@ -71,7 +72,7 @@ function changeColor(){
 }
 
 function printResults(){
-    console.log("This is a test. BMI: " + bmi + "Final Height:" + finalHeight + "Class:" + classification)
+    console.log("This is a final result as well. Your BMI was: " + bmi + ". Your final converted height was:" + finalHeight + ". Your class was: " + classification + ".")
 }
 
 
