@@ -78,9 +78,11 @@ function printResults(){
 
 
 
-function runAll(){
+function runFinal(){
     checkBMI()
     changeColor()
     printResults()
+    convertHeight()
+    document.getElementById("results").innerHTML += "This was calculated with the total height " + finalHeight + " inches and total weight " + weight + " pounds." 
 }
 
