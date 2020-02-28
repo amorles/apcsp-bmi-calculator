@@ -83,7 +83,7 @@ function runFinal(){
     changeColor()
     printResults()
     convertHeight()
-    document.getElementById("results").innerHTML += "This was calculated with the total height " + finalHeight + " inches and total weight " + weight + " pounds." 
+    document.getElementById("results").innerHTML += "This was calculated with the total height " + finalHeight + " inches and total weight " +  Number(weight.value) + " pounds." 
 }
 
 function runHeight(){

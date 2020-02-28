@@ -25,7 +25,19 @@ h1{
   label {
       margin-bottom: 20px;
   }
-#calculateH, #caclulateB{
+#calculateB{
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  padding: 6px 40px;
+  margin: 0 auto; 
+  display: block;
+}
+
+#calculateH{
   background-color: #17a2b8;
   border-color: #17a2b8;
   font-family: Roboto, sans-serif;
