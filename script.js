@@ -47,6 +47,7 @@ function checkBMI(){
         document.getElementById("results").innerHTML = "Error. Please check the code";
     }
 }
+
 function changeColor(){
     if(classification==1){
         document.getElementById("results").classList.remove('underweight', 'healthy', 'overweight', 'obese', 'eobese')
