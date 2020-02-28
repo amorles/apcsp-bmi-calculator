@@ -86,3 +86,8 @@ function runFinal(){
     document.getElementById("results").innerHTML += "This was calculated with the total height " + finalHeight + " inches and total weight " + weight + " pounds." 
 }
 
+function runHeight(){
+    convertHeight()
+    console.log("Your total height in inches is: " + finalHeight)
+}
+
